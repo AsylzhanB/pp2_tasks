@@ -1,0 +1,74 @@
+SIDEBAR_WIDTH = 180
+CELL_SIZE = 30
+
+GRID_COLS = 20
+GRID_ROWS = 18
+
+PLAY_AREA_W = GRID_COLS * CELL_SIZE
+PLAY_AREA_H = GRID_ROWS * CELL_SIZE
+
+WINDOW_WIDTH = PLAY_AREA_W + SIDEBAR_WIDTH
+WINDOW_HEIGHT = PLAY_AREA_H
+
+PLAY_AREA_COLS = GRID_COLS
+TITLE = "Snake Game"
+
+BASE_SPEED = 200
+SPEED_INCREMENT = 15
+MIN_SPEED = 60
+FOOD_PER_LEVEL = 5
+FOOD_DISAPPEAR_MS = 7000
+POISON_APPEAR_CHANCE = 0.20
+POWERUP_DURATION_MS = 5000
+POWERUP_FIELD_MS = 8000
+POWERUP_SPAWN_CHANCE = 0.15
+SPEED_BOOST_FACTOR = 0.6
+SLOW_MOTION_FACTOR = 1.8
+OBSTACLE_START_LEVEL = 3
+OBSTACLES_PER_LEVEL = 6
+BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
+DARK_GRAY = (30, 30, 30)
+GRAY = (80, 80, 80)
+LIGHT_GRAY = (160, 160, 160)
+
+GREEN = (50, 205, 50)
+DARK_GREEN = (34, 139, 34)
+RED = (220, 50, 50)
+DARK_RED = (139, 0, 0)
+YELLOW = (255, 215, 0)
+ORANGE = (255, 140, 0)
+CYAN = (0, 220, 220)
+PURPLE = (180, 60, 220)
+BLUE = (50, 100, 220)
+BROWN = (101, 67, 33)
+
+
+FOOD_COLORS = {
+    "normal": GREEN,
+    "bonus": YELLOW,
+    "timed": ORANGE,
+    "poison": DARK_RED,
+}
+
+FOOD_POINTS = {
+    "normal": 10,
+    "bonus": 25,
+    "timed": 15,
+    "poison": 0,
+}
+
+POWERUP_COLORS = {
+    "speed": CYAN,
+    "slow": BLUE,
+    "shield": PURPLE,
+}
+
+
+DB_CONFIG = {
+    "dbname": "snake_game",
+    "user": "postgres",
+    "password": "Bekalox12",
+    "host": "localhost",
+    "port": 5432,
+}
