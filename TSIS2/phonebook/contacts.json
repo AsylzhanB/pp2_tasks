@@ -1,0 +1,11 @@
+[
+  {
+    "name": "John Pork",
+    "email": "john@gmail.com",
+    "birthday": "2000-01-01",
+    "group": "Friend",
+    "phones": [
+      {"number": "123", "type": "mobile"}
+    ]
+  }
+]
